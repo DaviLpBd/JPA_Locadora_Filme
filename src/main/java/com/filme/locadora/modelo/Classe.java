@@ -57,8 +57,8 @@ public class Classe  {
 	public void setNomeClasse(String nomeClasse) {
 		this.nomeClasse = nomeClasse;
 	}
-
-	@Column(name = "PRECO_CLASSE", nullable = false, precision = 4)
+	
+	@Column(name = "PRECO_CLASSE", nullable = false, precision = 4, scale = 2)
 	public BigDecimal getPrecoClasse() {
 		return this.precoClasse;
 	}
